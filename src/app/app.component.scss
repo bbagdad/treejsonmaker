@@ -1,0 +1,45 @@
+div.container {
+  display: flex;
+  height: 100%;
+
+  section.input,
+  section.output {
+    height: 100%;
+    overflow-y: auto;
+  }
+
+  section.input {
+    width: 50%;
+
+    #input {
+      background-color: #ddd;
+      width: 100%;
+      height: 100%;
+      font-size: 16px;
+      padding: 10px;
+    }
+  }
+
+  section.output {
+    flex: 1;
+    background-color: rgb(148, 146, 146);
+
+    pre {
+      font-size: 16px;
+      padding: 10px;
+      margin: 0;
+    }
+  }
+
+  .resizer {
+    background: #444857;
+    height: 100%;
+    width: 14px;
+    cursor: col-resize;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 10;
+  }
+}

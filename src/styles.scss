@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+html,
+body {
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-bottom: 40px;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #363636;
+  overflow: hidden;
+
+  app-root {
+    height: calc(100% - 30px);
+  }
+}
