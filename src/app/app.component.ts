@@ -12,7 +12,7 @@ export class AppComponent implements OnInit {
 
   }
 
-  private displayJson: string;
+  public displayJson: string;
   private textKey = 'text';
   private addLevel = true;
   private toTreeJson = !false;
